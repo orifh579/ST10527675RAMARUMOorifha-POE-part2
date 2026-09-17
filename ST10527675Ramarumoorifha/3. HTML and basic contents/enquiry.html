@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Techzone Electronics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="link rel=images/webp" href="images/OIP.png">
+</head>
+    
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo">
+            <img src="images/OIP.png" alt="Techzone Electronics logo" width="40" height="40">
+            <h1>Techzone Electronics</h1>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="enquiry">
+        <h2>Product enquiry</h2>
+        <p>Please complete the form below if you would like more information about our products.</p>
+
+        <form id="enquiryform">
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="product">Product:</label>
+            <select id="product" name="product" required>
+                <option value="">-- Select a product --</option>
+                <option value="laptop">Laptop</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="headset">Headset</option>
+                <option value="printer">Printer</option>
+            </select>
+
+            <label for="message">Your enquiry:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Type your enquiry here..." required></textarea>
+
+            <button type="submit">Submit enquiry</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Techzone Electronics. All rights reserved.</p>
+    <p>Email: <a href="mailto:info@techzone.co.za">info@techzone.co.za</a></p>
+    <p>
+        Follow us:
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+    </p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
